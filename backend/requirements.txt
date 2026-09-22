@@ -1,0 +1,7 @@
+Flask>=3.0,<4
+flask-cors>=4.0
+pymongo>=4.8
+dnspython>=2.6        # needed for mongodb+srv:// (MongoDB Atlas) connection strings
+PyJWT>=2.8
+python-dotenv>=1.0
+gunicorn>=22.0

@@ -1,0 +1,30 @@
+# --- Node / frontend -------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# --- Python / backend --------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+backend/.pytest_cache/
+*.egg-info/
+
+# --- environment / secrets --------------------------------------------------
+.env
+.env.*
+!.env.example
+!*/.env.example
+
+# --- build / misc -------------------------------------------------------
+dist/
+build/
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sqlite3

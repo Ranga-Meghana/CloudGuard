@@ -1,0 +1,26 @@
+# Render "Blueprint" for the CloudGuard API.
+# Render Dashboard -> New -> Blueprint -> point at this repo (or create the service manually
+# using these same settings: root directory "backend", build/start commands below).
+services:
+  - type: web
+    name: cloudguard-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 60
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: MONGO_URI
+        sync: false          # set this in the Render dashboard (leave empty for in-memory demo mode)
+      - key: MONGO_DB_NAME
+        value: cloudguard
+      - key: FRONTEND_URL
+        sync: false          # set to your Vercel URL, e.g. https://cloudguard.vercel.app
+      - key: CLOUD_PROVIDER
+        value: simulated
+      - key: AUTO_SEED
+        value: "true"
+      - key: ALLOW_DEMO_LOGIN
+        value: "true"
