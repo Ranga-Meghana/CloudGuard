@@ -5,4 +5,4 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 EXPOSE 5000
-CMD ["gunicorn", "run:app", "--bind", "0.0.0.0:5000", "--workers", "2", "--threads", "4", "--timeout", "60"]
+CMD ["sh", "-c", "python -c \"from run import app; print(app.url_map)\" && gunicorn run:app --bind 0.0.0.0:5000 --workers 2 --threads 4 --timeout 60 --access-logfile -"]
