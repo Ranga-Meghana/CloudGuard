@@ -337,13 +337,6 @@ string into Render's `MONGO_URI`.
 
 ---
 
-## 👤 Team / Project Information
-
-**Project:** CloudGuard — Cloud Computing PBL
-**Author:** *(add your name / roll number / batch here)*
-**College:** *(add your institution here)*
-**Course:** Cloud Computing
-
 ---
 
 ## ✅ Final Verification
