@@ -39,18 +39,6 @@ later without touching the rest of the app (see [Architecture](#-architecture)).
 
 ---
 
-## 🖼️ Screenshots
-
-*(Add screenshots of your running app here before submitting — Dashboard, Resources, Security, Cost Optimization, Analytics.)*
-
-```
-docs/screenshots/dashboard.png
-docs/screenshots/resources.png
-docs/screenshots/security.png
-docs/screenshots/costs.png
-docs/screenshots/analytics.png
-```
-
 ---
 
 ## 🏗️ Architecture
