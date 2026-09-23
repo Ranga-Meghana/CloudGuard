@@ -1,5 +1,12 @@
 # ☁️ CloudGuard
 
+## 🚀 Live Demo
+
+- 🌐 **Live Demo:** https://frontend-mu-six-crph2te2az.vercel.app/
+- 💻 **Frontend:** https://frontend-mu-six-crph2te2az.vercel.app/
+- ⚙️ **Backend API:** https://cloudguard-backend-cl3h.onrender.com/
+- ❤️ **Backend Health:** https://cloudguard-backend-cl3h.onrender.com/api/health
+
 **Intelligent Cloud Security, Monitoring & Cost Optimization Platform**
 
 *Secure. Monitor. Optimize.*
